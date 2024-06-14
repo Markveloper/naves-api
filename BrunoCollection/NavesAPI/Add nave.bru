@@ -1,0 +1,18 @@
+meta {
+  name: Add nave
+  type: http
+  seq: 6
+}
+
+post {
+  url: http://localhost:8080/api/naves
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Flying Falcon",
+    "series": "Rebels"
+  }
+}

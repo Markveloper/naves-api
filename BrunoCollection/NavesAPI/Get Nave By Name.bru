@@ -1,0 +1,15 @@
+meta {
+  name: Get Nave By Name
+  type: http
+  seq: 3
+}
+
+get {
+  url: http://localhost:8080/api/naves/search?name=X-Wing
+  body: none
+  auth: none
+}
+
+params:query {
+  name: X-Wing
+}

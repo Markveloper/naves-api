@@ -1,0 +1,17 @@
+meta {
+  name: Get Nave Pageable
+  type: http
+  seq: 4
+}
+
+get {
+  url: http://localhost:8080/api/naves?page=0&size=10&sort=id,asc
+  body: none
+  auth: none
+}
+
+params:query {
+  page: 0
+  size: 10
+  sort: id,asc
+}
